@@ -1,0 +1,22 @@
+/* variables.css */
+:root {
+    /* for text */
+    --text-color-primary: rgba(252, 252, 252, 1);
+    --text-color-secondary: rgba(252, 252, 252, 0.65);
+
+
+    /* for background */
+    --background-color-primary: rgba(23, 23, 25, 1);
+    --background-color-secondary: rgba(33, 33, 36, 1);
+    --background-color-player: rgba(31, 31, 34, 1);
+    --background-color-player-played: hsl(40, 67%, 55%);
+
+    /* border */
+    --border-rudius-primary: 20px;
+    --border-rudius-cover: 5px;
+
+
+    /* text */
+    --text-font-family-titleTrack: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+  

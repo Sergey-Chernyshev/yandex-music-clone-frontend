@@ -1,0 +1,163 @@
+:root{
+    /* block__player */
+    --block-width-primary: 95%;
+    --timeLine-background-color: rgba(76, 78, 84, 1)
+}
+
+
+
+.block__player{
+    width: var(--block-width-primary);
+    height: 100px;
+    position: fixed;
+    background-color: var(--background-color-player);
+    bottom: 30px;
+    border-radius: var(--border-rudius-primary);
+    left: calc((100% - var(--block-width-primary))/2 );
+
+    display: grid;
+    grid-template-columns: minmax(200px, 400px) minmax(400px, auto) minmax(100px, 150px);
+}
+
+.player__leftSide{
+    /* background-color: antiquewhite; */
+    height: 100%;
+    /* background-color: antiquewhite; */
+    display: flex;
+    position: relative;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.player__leftSide__cover{
+    width: 110px;
+    height: 110px;
+    background-color: brown;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -40px;
+    margin-left: 30px;
+    border-radius: var(--border-rudius-cover);
+}
+
+.player__leftSide__trackInfo{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    text-align: left;
+}
+
+.trackInfo__title{
+    cursor: pointer;    
+    font-family:var(--text-font-family-titleTrack);
+    font-size: 20px;
+}
+
+
+.trackInfo__author{
+    cursor: pointer;
+    color: var(--text-color-secondary);
+}
+
+.player__centerSide{
+    /* background-color: aqua; */
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.player__centerSide__topControls{
+    height: 50%;
+    /* background-color: aqua; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: end;
+    column-gap: 40px;
+}
+
+.topControls__background_img{
+    background-position: center;
+    background-size: contain;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+
+
+.topControls__mix{
+    background-image: url("../../media/icons/Icon-Shuffle.svg");
+}
+.topControls__mix__clicked{
+    background-image: url("../../media/icons/Icon-Shuffle-Cheked.svg");
+}
+.topControls__prev{
+    background-image: url("../../media/icons/Icon-Rewind-Filled.svg");
+}
+.topControls__play{
+    background-image: url("../../media/icons/Icon-Play-Filled.svg");
+}
+.topControls__pause{
+    background-image: url("../../media/icons/icon_media_pause_.svg");
+}
+.topControls__next{
+    background-image: url("../../media/icons/Icon-Forward-Filled.svg");
+}
+.topControls__repeat{
+    background-image: url("../../media/icons/Icon-Repeat.svg");
+}
+
+
+
+
+.player__centerSide__lowerControls{
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.lowerControls__timeLine{
+    width: 80%;
+    border-radius: var(--border-rudius-primary);
+    height: 5px;
+    margin-top: 4px;
+    background-color: var( --timeLine-background-color);
+    position: relative;
+}
+
+.lowerControls__timeLineListened{
+    position: absolute;
+    background-color: var(--background-color-player-played);
+    /* width: 0; */
+    height: 100%;
+    border-radius: var(--border-rudius-primary);
+    pointer-events: none;
+}
+
+.circle {
+    position: absolute;
+    width: 10px; /* Диаметр кружка */
+    height: 10px; /* Диаметр кружка */
+    border-radius: 50%; /* Делаем кружок круглым */
+    background-color: rgb(255, 228, 174); /* Цвет кружка */
+    transform: translate(-50%, -50%); /* Центрируем кружок по координатам курсора */
+    pointer-events: none; /* Чтобы кружок не мешал обработке событий мыши таймлайна */
+    transition: transform 0.7s ease; /* Анимация перемещения */
+}
+.circleTime{
+    position: absolute;
+    transform: translate(-50%, -30px);
+}
+
+.lowerControls__timeLine:hover .circle {
+    transform: translate(-50%, -50%) scale(1.2); /* Масштабируем кружок при наведении */
+}

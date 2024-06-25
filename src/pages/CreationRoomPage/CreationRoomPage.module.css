@@ -1,0 +1,44 @@
+.block__creationRoom {
+    width: 50%;
+    max-width: 900px;
+    height: 450px;
+    background-color: #1f1f22;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: var(--border-rudius-primary);
+    text-align: center;
+}
+
+.creationRoom__title{
+    font-size: 35px;
+    margin-top: 20px;
+    position: absolute;
+    width: 100%;
+}
+
+.creationRoom__button{
+    position: absolute;
+    cursor: pointer;
+    width: 400px;
+    height: 100px;
+    border-radius: var(--border-rudius-primary);
+    bottom: 20px;
+    background-color: var(--background-color-primary);
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--background-color-player-played);
+}
+
+
+.creationRoom__button__inactive{
+    cursor:no-drop;
+    color: black;
+}

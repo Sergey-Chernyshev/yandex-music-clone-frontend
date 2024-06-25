@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import { Outlet } from 'react-router-dom';
+import SocketProvider from './Socket/SocketProvider';
+import Chart from './Chart';
+import { io } from 'socket.io-client';
+import { useEffect } from 'react';
+
+
+// const socket = io('<wss://localhost:8080>');
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <SocketProvider> */}
+        <Outlet />
+        {/* <Chart /> */}
+      {/* </SocketProvider> */}
     </div>
   );
 }

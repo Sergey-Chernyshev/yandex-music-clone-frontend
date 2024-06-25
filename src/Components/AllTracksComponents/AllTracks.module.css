@@ -1,0 +1,11 @@
+.AllTracks{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    margin-top: 50px;
+    width: 50%;
+    min-height: 400px;
+
+}

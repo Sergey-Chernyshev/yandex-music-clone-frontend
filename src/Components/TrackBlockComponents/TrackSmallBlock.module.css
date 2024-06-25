@@ -1,0 +1,50 @@
+
+
+.block__smallTrack_t1{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(55, 55, 55);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: var(--border-rudius-cover);
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+
+.t1__cover{
+    height: 100%;
+    width: 80px;
+    background-color: rgb(49, 49, 49);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.t1__info{
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    min-width: 200px;
+    
+}
+
+.t1__info__title{
+    display: flex;
+    height: 60%;
+    align-items: end;
+    font-family: var(--text-font-family-titleTrack);
+    font-size: 22px;
+}
+
+.t1__info__author{
+    display: flex;
+    height: 30%;
+    margin-top: 5px;
+    justify-content: left;
+    align-items: top;
+    font-size: 15px;
+    color: var(--text-color-secondary);
+}
