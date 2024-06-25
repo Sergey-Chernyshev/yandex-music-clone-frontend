@@ -1,7 +1,7 @@
 # Yandex music Clone (frontend part)
 
 
-For watch backend part go to ->  
+For watch backend part go to ->  https://github.com/Sergey-Chernyshev/yandex-music-clone-backend/tree/main
 
 ## About this project
 The idea of creating this project came to me when I was choosing a new Pet project for myself. In addition, I have long wanted to make my own implementation of syncing music between different devices, even outside the same account. I am solving this problem with this project. Using the api, which is available in Python, I get all the data about the user and display it on my site.
