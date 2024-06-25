@@ -12,12 +12,6 @@ Create a more optimized modern web application. Explore new technologies.
 -------------------
 # To-Do List 📋
 
-## Main tasks
-
-- [ ] 📌 Завершить проект
-  - [ ] Провести тестирование
-  - [ ] Сдать отчет
-
 ## Technical tasks
 
 - [ ] ⏯️ Working with the player
